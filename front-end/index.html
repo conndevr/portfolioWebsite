@@ -10,11 +10,7 @@
     <body>
         <header >
             <div class="container">
-                <section class=" container--flex">
-                    <a href="">Home</a>
-                    <a href="">Projecten</a>
-                </section>
-
+                <a href="index.html">Home</a>
             </div>
             <figure class="center image-container ">
                 <div class="image-container--flex">
@@ -37,6 +33,7 @@
         <main>
 
             <div class="big-card-container">
+
                 <div class="card-container">
                     <img class="card-container__image"  src="./assets/img/html.svg" alt="">
                     <h2 class="card-container__header">HTML</h2>
@@ -68,25 +65,41 @@
                 </div>
             </div>
             <div>
-            <form action="/">
-            <label for="">firstname</label>
-            <input type="text" placeholder="">
+                <form class="form-container" action="/">
+                    <h2>Stuur mij een bericht</h2>
+                    <div class="form-container__box">
+                        <label for="">Voornaam</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="form-container__box">
 
-            <label for="">lastname</label>
-            <input type="text" placeholder="">
+                        <label for="">Achternaam</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="form-container__box">
 
-            <label for="">Email</label>
-            <input type="text" placeholder="">
+                        <label for="">Email</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="form-container__box">
 
-            <label for="">Message</label>
-            <input type="text" placeholder="">
-            
-            
-            </form>
-            
-            
+                        <label for="">Bericht</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <button>Verstuur</button>
+                </form>
+
             </div>
         </main>
+        <div class="center project-container">
+            <h2>Mijn projecten</h2>
+
+            <div class="project-container__projects"></div>
+
+        </div>
         <footer></footer>
+        <script src="./assets/data/data.js"></script>
+
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>

@@ -1,5 +1,6 @@
-body {
-    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .center {
@@ -22,8 +23,6 @@ body {
     display: flex;
     gap: 1rem;
 }
-
-
 
 .image-container--flex {
     display: block;
@@ -48,11 +47,27 @@ body {
     height: 8rem;
 }
 
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding-left: 2rem
+}
+
+@media(min-width: 45rem) {
+    main {
+        display: flex;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+}
+
+
 @media(min-width: 35rem) {
     .big-card-container {
         display: flex;
         flex-wrap: wrap;
         max-width: 40rem;
+        padding-top: 3rem;
     }
 }
 
@@ -64,13 +79,59 @@ body {
 
 @media(min-width: 35rem) {
     .card-container {
+        width: 12rem;
         max-width: 100%;
-        width: 20rem
     }
 }
-
-
 
 .card-container__image {
     width: 5rem;
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+.form-container__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container {
+    padding: 0 0  2rem 2rem ;
+    
+}
+
+@media(min-width: 35rem) {
+    .project-container__projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+.project-container__projects__project {
+    max-width: 20rem;
+    padding: 2rem;
+    border: 1px solid red;
+}
+
+@media(min-width: 35rem) {
+    .project-container__projects__project {
+    width: 30%;
+    }
+}
+
+.detail-container {
+    padding-top: 3rem;
+}
+
+
+.detail-container__content {
+    max-width: 15rem;
+    margin: 0 auto;
+}
+
